@@ -8,7 +8,7 @@ function Platform() {
   this.color = [255,255,255];
   
   this.display = function() {
-    if (this.x - translateX <= 1200 && this.x - translateX >= 0) {
+    if (this.x - translateX <= 1200 && this.x + 1200 - translateX >= 0) {
       noStroke();
       fill(this.color[0],this.color[1],this.color[2]);
       rect(this.x - translateX,this.y,this.len,this.thickness);
