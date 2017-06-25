@@ -4,12 +4,21 @@ function MovableObj() {
   this.wid = 40;
   this.len = random(40,200);
   
+  this.frame_x = this.x;
+  this.frame_y = this.y;
+  
   this.display = function() {
+    this.update();
     if (this.x <= 1200) {
       noStroke();
       fill(255);
-      ellipse(this.x,this.y,20);
+      ellipse(this.frame_x, this.frame_y, 20);
     } 
     
+  };
+  
+  this.update = function() {
+    this.frame_x = this.x - translateX;
+    this.frame_y = this.y - translateY;
   };
 }

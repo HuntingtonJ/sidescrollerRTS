@@ -1,3 +1,6 @@
+var viewWidth = 1200;
+var viewHeight = 800;
+
 var platforms = [];
 var movableObjs = [];
 var platformCount = 20;
@@ -6,9 +9,10 @@ var movableObjsCount = 20;
 var ground;
 
 var translateX = 0;
+var translateY = 0;
 
 function setup() {
-  createCanvas(1200,800);
+  createCanvas(viewWidth, viewHeight);
   
   for (var i = 0; i < platformCount; i++) {
     platforms[i] = new Platform();
@@ -22,7 +26,7 @@ function setup() {
 function draw() {
   background(0);
   
-  if (mouseX > 1100 && translateX <= 6000 - 1200) {
+  if (mouseX > 1100 && translateX <= 6000 - viewWidth) {
     translateX += 5;
   } else if (mouseX < 100 && translateX >= 0) {
     translateX -= 5;
