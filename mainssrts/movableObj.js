@@ -1,4 +1,4 @@
-function movableObj() {
+function MovableObj() {
   this.x = random(6000);
   this.y = random(800);
   this.wid = 40;
@@ -11,5 +11,5 @@ function movableObj() {
       ellipse(this.x,this.y,20);
     } 
     
-  }
-};
+  };
+}
