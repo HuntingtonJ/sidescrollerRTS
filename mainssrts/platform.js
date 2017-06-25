@@ -13,12 +13,9 @@ function Platform() {
   
   this.display = function() {
     this.update();
-    if (this.frame_x <= 1200 && this.frame_x + viewWidth >= 0) {
-      noStroke();
-      fill(this.color[0],this.color[1],this.color[2]);
-      rect(this.frame_x, this.frame_y, this.len, this.thickness);
-    } 
-    
+    noStroke();
+    fill(this.color[0],this.color[1],this.color[2]);
+    rect(this.frame_x, this.frame_y, this.len, this.thickness);
   };
   
   this.update = function() {

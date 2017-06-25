@@ -9,11 +9,9 @@ function MovableObj() {
   
   this.display = function() {
     this.update();
-    if (this.x <= 1200) {
       noStroke();
       fill(255);
       ellipse(this.frame_x, this.frame_y, 20);
-    } 
     
   };
   
