@@ -1,0 +1,5 @@
+//platform class
+function Platform {
+  
+  
+};
