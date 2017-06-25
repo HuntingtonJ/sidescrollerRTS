@@ -23,10 +23,7 @@ function draw() {
     platforms[i].display();
     movableObjs[i].display();
   }
-<<<<<<< HEAD
-    
-    
-=======
+
   ground.display();
->>>>>>> 171ae23aab570461bf174e303c89e86e98d355a8
+
 }
