@@ -1,0 +1,5 @@
+//character class
+function character{
+  
+  
+};
