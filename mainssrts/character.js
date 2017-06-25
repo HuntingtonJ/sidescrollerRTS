@@ -1,5 +1,5 @@
 //character class
-function character{
+function character(){
   
   
 };
